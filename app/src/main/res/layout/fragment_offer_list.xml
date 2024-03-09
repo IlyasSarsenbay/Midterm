@@ -9,6 +9,20 @@
     android:padding="16dp"
     tools:context=".fragment.OfferListFragment">
 
+    <EditText
+        android:id="@+id/Search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search..."
+        android:inputType="text"
+        android:layout_toStartOf="@+id/searchButton" />
+
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:layout_alignParentEnd="true" />
     <RadioGroup
         android:id="@+id/sort_radio_group"
         android:layout_width="match_parent"

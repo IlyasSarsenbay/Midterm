@@ -1,11 +1,11 @@
 package com.example.aviatickets.activity
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.aviatickets.R
 import com.example.aviatickets.databinding.ActivityMainBinding
 import com.example.aviatickets.fragment.OfferListFragment
-
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
 
@@ -18,6 +18,5 @@ class MainActivity : AppCompatActivity() {
             .beginTransaction()
             .add(R.id.fragment_container_view, OfferListFragment.newInstance())
             .commit()
-
     }
 }
